@@ -1,0 +1,72 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+main {
+  background-color: rgb(248, 221, 185);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Staatliches', sans-serif;
+}
+
+ul.list-group {
+  min-height: 130px;
+}
+
+.bottom-trash {
+  opacity: 0;
+  color: #f5cccc;
+  font-size: 2.3rem;
+  font-family: "Staatliches", sans-serif;
+  transform: translateY(150px);
+  transition: all .5s ease-in-out; 
+  background-color: rgba(245, 18, 56, 0.7);
+}
+
+.bottom-trash-drag {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.bottom-trash-active {
+  background-color: rgb(177, 3, 32);
+}
+
+.dropover {
+  background: rgba(15, 12, 12, 0.3);
+}
+
+.dropover-active {
+  background: rgba(10, 7, 7, 0.9);
+}
+
+.btn-add,
+.btn-save {
+  background-color: #f43efd;
+  background-image: linear-gradient(45deg, #e94ef1 0%, #02a3cf 52%, #2BFF88 90%);
+  transition: all .5s ease-out;  
+  background-size: 1px 100px; 
+  background-position: 0px -10px;
+}
+
+.btn-close, 
+.btn-delete {
+  transition: all .5s ease-out;  
+  background-size:1px 100px; 
+  background-position: 1px -10px;
+  background-color: #fa173d;
+  background-image: linear-gradient(180deg, #f76b56 0%, #c00322 100%);
+}
+
+.btn-save:hover, 
+.btn-add:hover,
+.btn-close:hover, 
+.btn-delete:hover {
+  background-position: 1px -50px;
+}
